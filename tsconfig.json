@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist",
+    // "rootDir": "./src",
+    // "outDir": "./dist",
     // "target": "es5",
     "target": "es2019",
     "lib": ["dom", "dom.iterable", "esnext", "ES2021"],
@@ -19,8 +19,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "sourceMap": true
+    // "sourceMap": true,
+    "baseUrl": "src"
   },
-  "include": ["src"],
+  "include": ["src", "src/custom.d.ts"],
   "exclude": ["node_modules"]
 }
